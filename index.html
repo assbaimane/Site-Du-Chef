@@ -8,7 +8,7 @@
     <title>Site du chef</title>
 </head>
 <body>
-    <header>
+    <header class="grid">
         <nav class="navbar navbar-expand navbar-dark bg-none pt-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +48,55 @@
                 </ul>
             </div>
         </nav>
+        <div id="Banner" class="row text-center text-light pt-8">
+            <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators mt-10 m-2">
+                    <div class="circle">
+                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active  rounded-circle"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="circle">
+                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2" class="rounded-circle"></button>
+                    </div>
+                    <div class="circle">
+                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3" class="rounded-circle"></button>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                            </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
+                        </h2>
+                        <div class="d-row mt-5">
+                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
+                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                            </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
+                        </h2>
+                        <div class="d-row mt-5">
+                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
+                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                            </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
+                        </h2>
+                        <div class="d-row mt-5">
+                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
+                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Dentelle">
+        </div>
     </header>
 
     <section id="Intro">
@@ -63,8 +112,10 @@
     </section>
 
     <footer>
-        
+
     </footer>
+
+    <!-- Script -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

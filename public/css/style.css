@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Nom écriture";
-  src: url(../../public/fonts/Ecriture-Type.ttf);
+  font-family: "Courgette";
+  src: url(../../public/fonts/Courgette-regular.ttf);
 }
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -23807,6 +23807,9 @@ html, body {
 html h1, html .h1, body h1, body .h1 {
   font-family: "Ecriture";
 }
+html h2, html .h2, body h2, body .h2 {
+  font-family: "Courgette";
+}
 html p, body p {
   font-size: small;
 }
@@ -23820,18 +23823,26 @@ html img, body img {
 html .row, body .row {
   margin: 0px;
 }
+html button, body button {
+  font-size: x-small;
+  text-transform: uppercase;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
 
 header {
-  background-color: black;
+  background: linear-gradient(rgba(19, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner1.jpg);
+  background-size: 100% auto;
+  height: 100vh;
 }
-header .nav-item {
+header nav .nav-item {
   align-self: flex-end;
 }
-header .nav-item img {
-  height: 70px;
+header nav .nav-item img {
+  height: 60px;
   padding: 0px 30px;
 }
-header .nav-link {
+header nav .nav-link {
   width: 10vw;
   padding: 15px 0px;
   font-size: x-small;
@@ -23839,8 +23850,24 @@ header .nav-link {
   border-top: 1.5px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
 }
-header .nav-link:hover, header .nav-link:active {
+header nav .nav-link:hover, header nav .nav-link:active {
   background-color: #c42d40;
+}
+header #Carousel {
+  height: 70vh !important;
+}
+header #Carousel .rounded-circle {
+  width: 10px;
+  height: 10px;
+}
+header #Carousel .circle .active {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+header #Dentelle {
+  height: 10px;
+  background-image: url("../img/bottom_decoration_img.png");
+  background-size: contain;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,8 @@ html,body
     margin: 0px
     h1
         font-family: "Ecriture"
+    h2
+            font-family: "Courgette"
     p
         font-size: small
     a
@@ -17,23 +19,51 @@ html,body
         height: 100%
     .row
         margin: 0px
+    button
+        font-size: x-small
+        text-transform: uppercase
+        border-radius: 100px
+        padding: 10px 20px
 
 header
-    background-color: black
-    .nav-item
-        align-self: flex-end
-        img
-            height: 70px
-            padding: 0px 30px
-    .nav-link
-        width: 10vw
-        padding: 15px 0px
-        font-size: x-small
-        color: white !important
-        border-top: 1.5px solid rgba(#FFF, 0.5)
-        border-bottom: 1.5px solid rgba(#FFF, 0.5)
-        &:hover,&:active
-            background-color: #c42d40
+    background: linear-gradient(rgba(#131111,0.8),rgba(#000,0.8)), url(../img/banner1.jpg)
+    background-size: 100% auto
+    height: 100vh
+    nav
+        .nav-item
+            align-self: flex-end
+            img
+                height: 60px
+                padding: 0px 30px
+        .nav-link
+            width: 10vw
+            padding: 15px 0px
+            font-size: x-small
+            color: white !important
+            border-top: 1.5px solid rgba(#FFF, 0.5)
+            border-bottom: 1.5px solid rgba(#FFF, 0.5)
+            &:hover,&:active
+                background-color: #c42d40
+    #Carousel
+        height: 70vh !important
+        .rounded-circle
+            width: 10px
+            height: 10px
+        .circle
+            // background-color: green verifier la hauteur ici
+        .circle .active
+            outline: 2px solid white
+            outline-offset: 2px
+    #Dentelle
+        height: 10px
+        background-image: url("../img/bottom_decoration_img.png")
+        background-size: contain
+            
+                
+
+            
+            
+
 
         
 
