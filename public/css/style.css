@@ -23824,5 +23824,23 @@ html .row, body .row {
 header {
   background-color: black;
 }
+header .nav-item {
+  align-self: flex-end;
+}
+header .nav-item img {
+  height: 70px;
+  padding: 0px 30px;
+}
+header .nav-link {
+  width: 10vw;
+  padding: 15px 0px;
+  font-size: x-small;
+  color: white !important;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+header .nav-link:hover, header .nav-link:active {
+  background-color: #c42d40;
+}
 
 /*# sourceMappingURL=style.css.map */
