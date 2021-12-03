@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="grid">
-        <nav class="navbar navbar-expand navbar-dark bg-none pt-4">
+        <nav class="row navbar navbar-expand navbar-dark bg-none pt-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,19 +50,11 @@
         </nav>
         <div id="Banner" class="row text-center text-light pt-8">
             <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators mt-10 m-2">
-                    <div class="circle">
-                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active  rounded-circle"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    </div>
-                    <div class="circle">
-                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1"
-                            aria-label="Slide 2" class="rounded-circle"></button>
-                    </div>
-                    <div class="circle">
-                        <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2"
-                            aria-label="Slide 3" class="rounded-circle"></button>
-                    </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -95,15 +87,611 @@
                 </div>
             </div>
         </div>
-        <div id="Dentelle">
+        <div id="Dentelle" class="row align-items-end">
         </div>
     </header>
 
-    <section id="Intro">
-
+    <section id="Main" class="text-center justify-content-center pt-5 pb-5">
+        <div class="container">
+            <!-------------- Title and Corner decoration ------------->
+            <div class="row">
+                <div class="col-1">
+                    <img src="./public/img/box-left-top.png" alt="red corner decoration">
+                </div>
+                <div class="col-10">
+                    <h2><span>OUR</span> Story</h2>
+                </div>
+                <div class="col-1">
+                    <img src="./public/img/box-right-top.png" alt="red corner decoration">
+                </div>
+            </div>
+            <!------------------ Our Story Content ------------------->
+            <div class="row">
+                <p class="col-6 offset-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem
+                    asperiores ad numquam, odit velit eligendi excepturi voluptatem ullam obcaecati illo recusandae deserunt
+                    temporibus ex maxime! Ab saepe sit dolorum, aliquam assumenda nesciunt fugiat maxime ipsa laboriosam
+                    placeat veritatis quam tempora quo rerum repudiandae recusandae illo natus eius facere, optio molestias
+                    porro. Cumque adipisci voluptate aliquam sit, non, porro incidunt quasi ad veniam ex eaque amet!
+                    Corporis ut magni eos!</p>
+            </div>
+            <!-------------------- Our Menu List  -------------------->
+            <div class="row">
+                <h2><span>OUR</span> Menu List</h2>
+                <div class="d-flex align-items-start">
+                    <!----------------- Apparence of each tab ----------------->
+                    <div class="nav flex-column nav-pills ms-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="row nav-link active" id="v-pills-BreakFast-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-BreakFast" type="button" role="tab" aria-controls="v-pills-BreakFast"
+                            aria-selected="true"><i class="fas fa-mug-hot fs-5 m-2"></i>BreakFast</button>
+                        <button class="row nav-link" id="v-pills-Lunch-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Lunch" type="button" role="tab" aria-controls="v-pills-Lunch"
+                            aria-selected="false"><i class="fas fa-pizza-slice fs-5 m-2"></i>Lunch</button>
+                        <button class="row nav-link" id="v-pills-Snacks-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Snacks" type="button" role="tab" aria-controls="v-pills-Snacks"
+                            aria-selected="false"><i class="fas fa-cheese fs-5 m-2"></i>Snacks</button>
+                        <button class="row nav-link" id="v-pills-Dinner-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Dinner" type="button" role="tab" aria-controls="v-pills-Dinner"
+                            aria-selected="false"><i class="fas fa-concierge-bell fs-5 m-2"></i>Dinner</button>
+                    </div>
+                    <!----------------- Content of each tab ------------------->
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!---------- Breakfast TabContent ---------->
+                        <div class="tab-pane fade show active" id="v-pills-BreakFast" role="tabpanel"
+                            aria-labelledby="v-pills-BreakFast-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!------------- Lunch TabContent ------------>
+                        <div class="tab-pane fade" id="v-pills-Lunch" role="tabpanel" aria-labelledby="v-pills-Lunch-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!------------ Snacks TabContent ------------>
+                        <div class="tab-pane fade" id="v-pills-Snacks" role="tabpanel" aria-labelledby="v-pills-Snacks-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!------------ Dinner TabContent ------------>
+                        <div class="tab-pane fade" id="v-pills-Dinner" role="tabpanel" aria-labelledby="v-pills-Dinner-tab">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row  align-items-center gap-3 flex-nowrap">
+                                        <div class="col-3 p-3"><img src="./public/img/menu_image_1.jpg" alt=""></div>
+                                        <div class="col-6 text-start">
+                                            <h6>Deer Steak with Potatoes</h6>
+                                            <p>Welcome to Risotto restaurant website. Here whe try to share our</p>
+                                        </div>
+                                        <div class="col-3 priceticket">
+                                            <div>$25</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------- Bottom Corner & line decoration ------------>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./public/img/box-bottom-left.png" alt="red corner decoration">
+                </div>
+                <div class="offset-3 col-4 my-auto">
+                    <div>
+                        <img src="./public/img/decoration_line.png" alt="red corner decoration">
+                    </div>
+                </div>
+                <div class="offset-3 col-1">
+                    <img src="./public/img/box-bottom_right.png" alt="red corner decoration">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="Main">
+    <section id="Chef">
 
     </section>
 
