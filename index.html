@@ -8,7 +8,7 @@
     <title>Site du chef</title>
 </head>
 <body>
-    <header class="grid">
+    <header>
         <nav class="row navbar navbar-expand navbar-dark bg-none pt-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,30 +58,30 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                        <h1>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
                             </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
-                        </h2>
+                        </h1>
                         <div class="d-row mt-5">
-                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
-                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                            <button class="bg-light text-dark m-2">Purchase theme</button>
+                            <button class="m-2">Learn more</button>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                        <h1>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
                             </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
-                        </h2>
+                        </h1>
                         <div class="d-row mt-5">
-                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
-                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                            <button class="bg-light text-dark m-2">Purchase theme</button>
+                            <button class="m-2">Learn more</button>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <h2>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
+                        <h1>Whatever your <span class="fs-5">OCCASION</span>,<br><span class="text-danger fs-5">TASTE
                             </span><span class="fs-5">makes</span> it one<br>to <span class="fs-5">remember !</span>
-                        </h2>
+                        </h1>
                         <div class="d-row mt-5">
-                            <button class="border-0 g-light text-dark m-2">Purchase theme</button>
-                            <button class="border-0 bg-danger text-light m-2">Learn more</button>
+                            <button class="bg-light text-dark m-2">Purchase theme</button>
+                            <button class="m-2">Learn more</button>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                     <img src="./public/img/box-left-top.png" alt="red corner decoration">
                 </div>
                 <div class="col-10">
-                    <h2><span>OUR</span> Story</h2>
+                    <h2><span>Our</span> Story</h2>
                 </div>
                 <div class="col-1">
                     <img src="./public/img/box-right-top.png" alt="red corner decoration">
@@ -694,7 +694,7 @@
     <section id="Chef">
         <div class="container pb-3">
             <div class="row text-center pt-5 pb-5">
-                <h2><span>MEET</span> Our Chef</h2>
+                <h2><span>Meet</span> Our Chef</h2>
             </div>
             <div class="row justify-content-around">
                 <div class="col-2 text-center">
@@ -725,8 +725,97 @@
         </div>
     </section>
 
-    <section id="Endpage">
+    <section id="Book" class="text-center justify-content-center pt-5 pb-5">
+        <div class="container">
+            <!------------ Grey Corner Decoration ------------->
+            <img class="corner" src="./public/img/box-left-top-grey.png" alt="">
+            <img class="corner" src="./public/img/box-right-top-grey.png" alt="">
+            <img class="corner" src="./public/img/box-bottom-left-grey.png" alt="">
+            <img class="corner" src="./public/img/box-bottom_right-grey.png" alt="">
+            
+            <!---------------- Booking Form ------------------>
+            <!-------------------- Title --------------------->
+            <h2><span>Book</span> Your Table</h2>
+            <div class="formbg pt-6 pb-6">
+                <form>
+                    <div class="row text-light pb-5">
+                        <p><span class="opacity-75">For any query please call us at: </span><span class="fw-bold fs-6">+91-1234567890</span></p>
+                    </div>
+                    <div class="row justify-content-center gap-4 flex-nowrap">
+                        <div class="col-4">
+                            <input type="text" placeholder="Enter Full Name" id="inputFullName" class="form-control">
+                            <input type="number" placeholder="Phone Number" id="inputPhone" class="form-control">
+                            <input type="date" placeholder="Date" id="inputDate" class="form-control">
+                            <select id="disabledSelect" class="form-select">
+                                <option>Occasion</option>
+                                <option>Engagement</option>
+                                <option>Bride To Be</option>
+                                <option>Birthday</option>
+                                <option>Professional meeting</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" placeholder="Enter Id" id="inputId" class="form-control">
+                            <select id="disabledSelect" class="form-select">
+                                <option>No Of Person</option>
+                                <option>Table of 2</option>
+                                <option>Table of 4</option>
+                                <option>Less than 10 people</option>
+                                <option>More than 10 people</option>
+                            </select>
+                            <input type="time" placeholder="Time" id="inputTime" class="form-control">
+                            <select id="disabledSelect" class="form-select">
+                                <option>Cuisine</option>
+                                <option>Oriental</option>
+                                <option>Italian</option>
+                                <option>Greek</option>
+                                <option>Asiatic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div>
+                            <button>Book now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
+            <!------------------- Our Blog ------------------->
+            <!-------------------- Title --------------------->
+            <h2><span>Our</span> Blog</h2>
+            <div class="row justify-content-center gap-3 text-start mt-6">
+                <div class="col-5">
+                    <div class="card">
+                        <div>
+                            <img src="./public/img/blog_img1.jpg" class="card-img-top" alt="salad picture">
+                            <div class="text-center pt-2 pb-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
+                        </div>
+                        <div class="card-body pt-5">
+                          <h5 class="card-title fw-bold">Greek Salad</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cupiditate industry typesetting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card">
+                        <div>
+                            <img src="./public/img/blog_img2.jpg" class="card-img-top" alt="chicken breast picture">
+                            <div class="text-center pt-2 pb-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
+                        </div>
+                        <div class="card-body pt-5">
+                          <h5 class="card-title fw-bold">Grilled Chicken</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, cupiditate industry typesetting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mb-8">
+                <div>
+                    <button>Know more</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>

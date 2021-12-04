@@ -23807,7 +23807,7 @@ html, body {
 html h1, html .h1, body h1, body .h1 {
   font-family: "Ecriture";
 }
-html h2, html .h2, html h3, html .h3, body h2, body .h2, body h3, body .h3 {
+html h1, html .h1, html h2, html .h2, html h3, html .h3, body h1, body .h1, body h2, body .h2, body h3, body .h3 {
   font-family: "Courgette";
 }
 html h2, html .h2, body h2, body .h2 {
@@ -23821,6 +23821,7 @@ html h2, html .h2, body h2, body .h2 {
 html h2 span, html .h2 span, body h2 span, body .h2 span {
   color: #c42d40;
   font-size: xxx-large;
+  text-transform: uppercase;
 }
 html p, body p {
   font-size: small;
@@ -23836,10 +23837,13 @@ html .row, body .row {
   margin: 0px;
 }
 html button, body button {
+  color: white;
+  background-color: #c42d40;
   font-size: x-small;
   text-transform: uppercase;
+  border: none;
   border-radius: 100px;
-  padding: 10px 20px;
+  padding: 1% 2%;
 }
 
 header {
@@ -23938,6 +23942,69 @@ header #Dentelle {
 #Chef img {
   padding-bottom: 0%;
   border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+}
+
+#Book {
+  background-image: url("../img/main_bg.jpg");
+  background-size: contain auto;
+}
+#Book .container {
+  position: relative;
+  background-color: white;
+  border: 1px solid #EEE;
+}
+#Book .container .corner {
+  height: auto;
+  width: auto;
+}
+#Book .container .corner:first-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#Book .container .corner:nth-of-type(2) {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#Book .container .corner:nth-of-type(3) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+#Book .container .corner:last-of-type {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#Book .container .formbg {
+  width: 80%;
+  margin: 5% auto;
+  border-radius: 20px;
+  background-image: url("../img/book_table_bg.jpg");
+  background-size: cover;
+}
+#Book .container .formbg input, #Book .container .formbg select {
+  margin: 8%;
+  border-radius: 10px;
+}
+#Book .container .card {
+  border: none;
+}
+#Book .container .card img {
+  position: relative;
+  border-radius: 10px;
+  border: 5px solid #EEE;
+}
+#Book .container .card img + div {
+  font-size: x-large;
+  position: absolute;
+  color: white;
+  width: 90%;
+  background-color: #c42d40;
+  border-radius: 5px;
+  top: 60%;
+  left: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
