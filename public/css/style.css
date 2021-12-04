@@ -24007,4 +24007,22 @@ header #Dentelle {
   left: 5%;
 }
 
+#Testimonials {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testimonials_background.jpg");
+  filter: blur(100%);
+}
+#Testimonials .container .col-2 img {
+  border: 3px solid #EEE;
+  border-radius: 50%;
+}
+#Testimonials .container .col-4 {
+  padding: 2%;
+  border: 1px solid #EEE;
+  border-radius: 10px;
+}
+#Testimonials .container .col-4 h6, #Testimonials .container .col-4 .h6 {
+  color: #c42d40;
+}
+
 /*# sourceMappingURL=style.css.map */
