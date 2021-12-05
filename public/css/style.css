@@ -23846,7 +23846,7 @@ html button, body button {
   padding: 1% 2%;
 }
 html #Dentelle, body #Dentelle {
-  height: 10px;
+  height: 12px;
   background-size: contain;
 }
 
@@ -24048,6 +24048,39 @@ footer button {
 }
 footer #Dentelle {
   background-image: url("../img/footer_bottom_decoration_img.png");
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body h2, body .h2 {
+    align-self: flex-end;
+    padding: 5px 0px 0px 0px;
+  }
+  body h2 span, body .h2 span {
+    font-size: x-large;
+  }
+
+  #Main .container .nav-pills .nav-link {
+    font-size: small;
+  }
+  #Main .container .tab-pane .priceticket {
+    width: 30px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  body h2, body .h2 {
+    align-self: flex-end;
+    padding: 5px 0px 0px 0px;
+  }
+  body h2 span, body .h2 span {
+    font-size: x-large;
+  }
+
+  #Main .container .nav-pills .nav-link {
+    font-size: x-small;
+  }
+  #Main .container .tab-pane .priceticket {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
