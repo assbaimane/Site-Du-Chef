@@ -23847,7 +23847,6 @@ html button, body button {
 }
 html #Dentelle, body #Dentelle {
   height: 10px;
-  background-image: url("../img/bottom_decoration_img.png");
   background-size: contain;
 }
 
@@ -23855,19 +23854,17 @@ header {
   background: linear-gradient(rgba(19, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner1.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 100vh;
+}
+header nav {
+  padding: 5%;
 }
 header nav .nav-item {
   align-self: flex-end;
 }
-header nav .nav-item img {
-  height: 60px;
-  padding: 0px 30px;
-}
 header nav .nav-link {
   width: 10vw;
   padding: 15px 0px;
-  font-size: x-small;
+  font-size: small;
   color: white !important;
   border-top: 1.5px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -23887,6 +23884,9 @@ header #Carousel .carousel-indicators .active {
   border: 3px solid white !important;
   box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.6);
   position: relative;
+}
+header #Dentelle {
+  background-image: url("../img/bottom_decoration_img.png");
 }
 
 #Main {
@@ -23944,59 +23944,59 @@ header #Carousel .carousel-indicators .active {
   border-bottom: 1px solid rgba(238, 238, 238, 0.3);
 }
 
-#Book {
+#Reservation {
   background-image: url("../img/main_bg.jpg");
   background-size: contain auto;
 }
-#Book .container {
+#Reservation .container {
   position: relative;
   background-color: white;
   border: 1px solid #EEE;
 }
-#Book .container .corner {
+#Reservation .container .corner {
   height: auto;
   width: auto;
 }
-#Book .container .corner:first-of-type {
+#Reservation .container .corner:first-of-type {
   position: absolute;
   top: 0px;
   left: 0px;
 }
-#Book .container .corner:nth-of-type(2) {
+#Reservation .container .corner:nth-of-type(2) {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-#Book .container .corner:nth-of-type(3) {
+#Reservation .container .corner:nth-of-type(3) {
   position: absolute;
   bottom: 0px;
   left: 0px;
 }
-#Book .container .corner:last-of-type {
+#Reservation .container .corner:last-of-type {
   position: absolute;
   bottom: 0px;
   right: 0px;
 }
-#Book .container .formbg {
+#Reservation .container .formbg {
   width: 80%;
   margin: 5% auto;
   border-radius: 20px;
   background-image: url("../img/book_table_bg.jpg");
   background-size: cover;
 }
-#Book .container .formbg input, #Book .container .formbg select {
+#Reservation .container .formbg input, #Reservation .container .formbg select {
   margin: 8%;
   border-radius: 10px;
 }
-#Book .container .card {
+#Reservation .container .card {
   border: none;
 }
-#Book .container .card img {
+#Reservation .container .card img {
   position: relative;
   border-radius: 10px;
   border: 5px solid #EEE;
 }
-#Book .container .card img + div {
+#Reservation .container .card img + div {
   font-size: x-large;
   position: absolute;
   color: white;
