@@ -24002,7 +24002,7 @@ header #Dentelle {
   background-image: url("../img/main_bg.jpg");
   background-size: contain auto;
 }
-#Contact .col-4 {
+#Contact .col-4, #Contact .col-8 {
   padding: 2%;
   background-color: #c42d40;
   border-radius: 10px;
