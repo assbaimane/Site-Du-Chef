@@ -24036,6 +24036,10 @@ footer #Dentelle {
     font-size: x-large;
   }
 
+  header .nav-item {
+    align-self: flex-start !important;
+  }
+
   #Main .container .nav-pills .nav-link {
     font-size: small;
   }
@@ -24058,6 +24062,10 @@ footer #Dentelle {
   }
   body p {
     font-size: x-small;
+  }
+
+  header .nav-item {
+    align-self: flex-start !important;
   }
 
   #Main .container .nav-pills .nav-link {
