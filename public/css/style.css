@@ -23959,7 +23959,7 @@ header #Dentelle {
   background-size: cover;
 }
 #Reservation .container .formbg input, #Reservation .container .formbg select {
-  margin: 8%;
+  margin: 8% 0%;
   border-radius: 10px;
 }
 #Reservation .container .card {
