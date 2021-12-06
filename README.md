@@ -3,4 +3,4 @@ Reproduction of a complex single-page website using sass and bootstrap
 
 |                            Site to be reproduced                       |                                 Reproduction                                        |
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <img src="./design/scheenshot.png" width="600"> | <img src="./design/result.png" width="600"> |
+| <img src="./design/screenshot.png" width="600"> | <img src="./design/result.png" width="600"> |
