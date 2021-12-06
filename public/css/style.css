@@ -23946,33 +23946,9 @@ header #Dentelle {
   background-size: contain auto;
 }
 #Reservation .container {
-  position: relative;
+  padding: 0px;
   background-color: white;
   border: 1px solid #EEE;
-}
-#Reservation .container .corner {
-  height: auto;
-  width: auto;
-}
-#Reservation .container .corner:first-of-type {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-#Reservation .container .corner:nth-of-type(2) {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-#Reservation .container .corner:nth-of-type(3) {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-#Reservation .container .corner:last-of-type {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
 }
 #Reservation .container .formbg {
   width: 80%;
@@ -23994,7 +23970,7 @@ header #Dentelle {
   border: 5px solid #EEE;
 }
 #Reservation .container .card img + div {
-  font-size: x-large;
+  font-size: auto;
   position: absolute;
   color: white;
   width: 90%;
@@ -24080,6 +24056,13 @@ footer #Dentelle {
   }
   #Main .container .tab-pane .priceticket {
     width: 30px;
+  }
+
+  #Reservation .card img + div {
+    margin-top: -15%;
+    font-size: small !important;
+    width: 90%;
+    left: 5%;
   }
 }
 

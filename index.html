@@ -728,22 +728,27 @@
 
     <section id="Reservation" class="text-center justify-content-center pt-5 pb-5">
         <div class="container">
-            <!------------ Grey Corner Decoration ------------->
-            <img class="corner" src="./public/img/box-left-top-grey.png" alt="">
-            <img class="corner" src="./public/img/box-right-top-grey.png" alt="">
-            <img class="corner" src="./public/img/box-bottom-left-grey.png" alt="">
-            <img class="corner" src="./public/img/box-bottom_right-grey.png" alt="">
-            
             <!---------------- Booking Form ------------------>
             <!-------------------- Title --------------------->
-            <h2><span>Book</span> Your Table</h2>
+            <div class="row">
+                <div class="col-1">
+                    <img src="./public/img/box-left-top-grey.png" alt="grey corner decoration">
+                </div>
+                <div class="col-10" id="About">
+                    <h2><span>Book</span> Your Table</h2>
+                </div>
+                <div class="col-1">
+                    <img src="./public/img/box-right-top-grey.png" alt="grey corner decoration">
+                </div>
+            </div>
+            <!--------------------- Form --------------------->
             <div class="formbg pt-6 pb-6">
                 <form>
                     <div class="row text-light pb-5">
                         <p><span class="opacity-75">For any query please call us at: </span><span class="fw-bold fs-6">+91-1234567890</span></p>
                     </div>
-                    <div class="row justify-content-center gap-4 flex-nowrap">
-                        <div class="col-4">
+                    <div class="row justify-content-center gap-md-3 gap-lg-4 flex-md-nowrap flex-lg-nowrap">
+                        <div class="col-8 col-md-4 col-lg-4">
                             <input type="text" placeholder="Enter Full Name" id="inputFullName" class="form-control">
                             <input type="number" placeholder="Phone Number" id="inputPhone" class="form-control">
                             <input type="date" placeholder="Date" id="inputDate" class="form-control">
@@ -755,7 +760,7 @@
                                 <option>Professional meeting</option>
                             </select>
                         </div>
-                        <div class="col-4">
+                        <div class="col-8 col-md-4 col-lg-4">
                             <input type="text" placeholder="Enter Id" id="inputId" class="form-control">
                             <select id="disabledSelect" class="form-select">
                                 <option>No Of Person</option>
@@ -786,11 +791,11 @@
             <!-------------------- Title --------------------->
             <h2 id=Blog><span>Our</span> Blog</h2>
             <div class="row justify-content-center gap-3 text-start mt-6">
-                <div class="col-5">
+                <div class="col-10 col-lg-5">
                     <div class="card">
                         <div>
                             <img src="./public/img/blog_img1.jpg" class="card-img-top" alt="salad picture">
-                            <div class="text-center pt-2 pb-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
+                            <div class="text-center pt-lg-2 pb-lg-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
                         </div>
                         <div class="card-body pt-5">
                           <h5 class="card-title fw-bold">Greek Salad</h5>
@@ -798,11 +803,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-10 col-lg-5">
                     <div class="card">
                         <div>
                             <img src="./public/img/blog_img2.jpg" class="card-img-top" alt="chicken breast picture">
-                            <div class="text-center pt-2 pb-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
+                            <div class="text-center pt-lg-2 pb-lg-1"><span class="fs-6 fw-bold">12</span> April 2017/ <span class="fs-6 fw-bold">20</span> Comments/ <span class="fs-6 fw-bold">35</span> Likes</div>
                         </div>
                         <div class="card-body pt-5">
                           <h5 class="card-title fw-bold">Grilled Chicken</h5>
@@ -811,9 +816,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3 mb-8">
+            <div class="row mt-3 mb-lg-6">
                 <div>
                     <button>Know more</button>
+                </div>
+            </div>
+            <!--------------- Bottom Corner  --------------->
+            <div class="row">
+                <div class="col-1">
+                    <img src="./public/img/box-bottom-left-grey.png" alt="grey corner decoration">
+                </div>
+                <div class="offset-10 col-1">
+                    <img src="./public/img/box-bottom_right-grey.png" alt="grey corner decoration">
                 </div>
             </div>
         </div>
@@ -849,8 +863,8 @@
         </div>
     </section>
 
-    <section class="text-center">
-        <div class="container pb-5" id="Contact">
+    <section  id="Contact" class="text-center">
+        <div class="container pb-5">
             <h2 class="pt-7"><span>Our</span> Contact</h2>
             <div class="offset-4 col-4 mt-7">
                 <div class="row">
