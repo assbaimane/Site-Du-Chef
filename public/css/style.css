@@ -3,6 +3,10 @@
   font-family: "Courgette";
   src: url(../../public/fonts/Courgette-regular.ttf);
 }
+@font-face {
+  font-family: "Lato";
+  src: url(../../public/fonts/Lato-regular.ttf);
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -23801,11 +23805,8 @@ textarea.form-control-lg {
   }
 }
 html, body {
-  font-family: "Nom écriture";
+  font-family: "Lato";
   margin: 0px;
-}
-html h1, html .h1, body h1, body .h1 {
-  font-family: "Ecriture";
 }
 html h1, html .h1, html h2, html .h2, html h3, html .h3, body h1, body .h1, body h2, body .h2, body h3, body .h3 {
   font-family: "Courgette";
@@ -24029,7 +24030,7 @@ footer #Dentelle {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body h2, body .h2 {
     align-self: flex-end;
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px;
   }
   body h2 span, body .h2 span {
     font-size: x-large;
@@ -24050,10 +24051,13 @@ footer #Dentelle {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body h2, body .h2 {
     align-self: flex-end;
-    padding: 5px 0px 0px 0px;
+    padding: 5px 0px;
   }
   body h2 span, body .h2 span {
     font-size: x-large;
+  }
+  body p {
+    font-size: x-small;
   }
 
   #Main .container .nav-pills .nav-link {
@@ -24072,13 +24076,6 @@ footer #Dentelle {
 
   #Testimonials .col-12:nth-of-type(2) {
     margin-bottom: 20%;
-  }
-  #Testimonials .col-12:nth-of-type(2) p {
-    font-size: x-small;
-  }
-
-  footer p {
-    font-size: x-small;
   }
 }
 
