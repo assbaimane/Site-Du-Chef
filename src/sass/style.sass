@@ -155,15 +155,16 @@ header
     background: linear-gradient(rgba(black,0.5), rgba(black, 0.5)), url("../img/testimonials_background.jpg")
     filter: blur(100%)
     .container 
-        .col-2 img
+        .col-lg-2 img, .col-md-4 img,.col-4 img
             border: 3px solid $verylightgrey
             border-radius: 50%
-        .col-4
-            padding: 2%
-            border: 1px solid $verylightgrey
-            border-radius: 10px
+        .col-lg-4, .col-md-8, .col-12
             h6
                 color: $red
+            .row
+                border: 1px solid $verylightgrey
+                padding: 2%
+                border-radius: 10px
 
 #Contact
     background-image: url("../img/main_bg.jpg")
@@ -207,6 +208,10 @@ footer
             .tab-pane
                 .priceticket
                     width: 30px
+    #Testimonials
+        .col-md-4
+            margin-bottom: 10%
+            padding: 2%
 
 
 @media screen and (min-width:0px) and (max-width:767px)
@@ -233,3 +238,8 @@ footer
                     font-size: small !important
                     width: 90%
                     left: 5%
+    #Testimonials
+        .col-12:nth-of-type(2)
+            margin-bottom: 20%
+            p
+                font-size: x-small

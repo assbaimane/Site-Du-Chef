@@ -23985,17 +23985,17 @@ header #Dentelle {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testimonials_background.jpg");
   filter: blur(100%);
 }
-#Testimonials .container .col-2 img {
+#Testimonials .container .col-lg-2 img, #Testimonials .container .col-md-4 img, #Testimonials .container .col-4 img {
   border: 3px solid #EEE;
   border-radius: 50%;
 }
-#Testimonials .container .col-4 {
-  padding: 2%;
-  border: 1px solid #EEE;
-  border-radius: 10px;
-}
-#Testimonials .container .col-4 h6, #Testimonials .container .col-4 .h6 {
+#Testimonials .container .col-lg-4 h6, #Testimonials .container .col-lg-4 .h6, #Testimonials .container .col-md-8 h6, #Testimonials .container .col-md-8 .h6, #Testimonials .container .col-12 h6, #Testimonials .container .col-12 .h6 {
   color: #c42d40;
+}
+#Testimonials .container .col-lg-4 .row, #Testimonials .container .col-md-8 .row, #Testimonials .container .col-12 .row {
+  border: 1px solid #EEE;
+  padding: 2%;
+  border-radius: 10px;
 }
 
 #Contact {
@@ -24041,6 +24041,11 @@ footer #Dentelle {
   #Main .container .tab-pane .priceticket {
     width: 30px;
   }
+
+  #Testimonials .col-md-4 {
+    margin-bottom: 10%;
+    padding: 2%;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body h2, body .h2 {
@@ -24063,6 +24068,13 @@ footer #Dentelle {
     font-size: small !important;
     width: 90%;
     left: 5%;
+  }
+
+  #Testimonials .col-12:nth-of-type(2) {
+    margin-bottom: 20%;
+  }
+  #Testimonials .col-12:nth-of-type(2) p {
+    font-size: x-small;
   }
 }
 
